@@ -1,0 +1,9 @@
+<div ng-init="title = 'Hello World'; subtitle = 'I am an app'">
+  <h2 id="appTitle">{{title}}</h2>
+  <h3 id="appSubtitle">{{subtitle}}</h3>
+  <button id="upgradeApp" ng-click="setAppTitle('App 2.0', 'Still an app')">Upgrade me!</button>
+  <div my-scoped-directive msd-update-title="setAppTitle(title, 'Updated by a directive')">
+    <h4 id="directiveTitle">{{title}}</h4>
+    <button id="bobApp" ng-click="updateTitle({title : 'bob'})">Bob it!</button>
+  </div>
+</div>

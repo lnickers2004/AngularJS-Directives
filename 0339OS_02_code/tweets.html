@@ -1,0 +1,6 @@
+<p ng-repeat="tweet in tweets" tweet>
+  <!-- ng-click allows us to bind a click event to a function on the $scope object -->
+  @{{tweet.author}}: {{tweet.text}}
+  <span ng-click="retweet()">RT</span> |
+  <span ng-click="reply()">Reply</span>
+</p>

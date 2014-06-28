@@ -1,0 +1,10 @@
+<div ng-init="title = 'Hello World'; subtitle = 'I am an app'">
+  <h2 id="appTitle">{{title}}</h2>
+  <h3 id="appSub">{{subtitle}}</h3>
+  <button id="newAppTitle" ng-click="setAppTitle('App 2.0')">Upgrade me!</button>
+  <div my-scoped-directive msd-title="I'm a directive, within the app {{title}}" msd-subtitle="subtitle">
+    <h4 id="directiveTitle">{{title}}</h4>
+    <button id="newDirTitle" ng-click="setDirectiveTitle('bob')">Bob it!</button>
+    <button id="newDirSub" ng-click="setDirectiveSubtitle('Time to submerge')">Empty the ballasts!</button>
+  </div>
+</div>
